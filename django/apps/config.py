@@ -210,7 +210,7 @@ class AppConfig:
             app_module = import_module(app_name)
         except ImportError:
             raise ImproperlyConfigured(
-                "Cannot import '%s'. Check that '%s.%s.name' is correct."
+                "Cannot import '%s'. Check that '%s.%s.name' can be imported."
                 % (
                     app_name,
                     app_config_class.__module__,
